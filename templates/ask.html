@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>問答系統</title>
+</head>
+<body>
+    <h1>問我問題！</h1>
+    <form method="POST">
+        <input type="text" name="question" placeholder="請輸入問題" value="{{ question }}">
+        <button type="submit">送出</button>
+    </form>
+
+    {% if answer %}
+    <p><strong>答案：</strong> {{ answer }}</p>
+    {% endif %}
+</body>
+</html>
